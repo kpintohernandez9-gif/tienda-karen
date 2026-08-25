@@ -1,0 +1,133 @@
+<svg viewBox="0 0 960 1600" xmlns="http://www.w3.org/2000/svg" font-family="Verdana, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5A4852"/>
+    </marker>
+  </defs>
+
+  <!-- fondo -->
+  <rect x="0" y="0" width="960" height="1600" fill="#FFFBF6"/>
+
+  <!-- título -->
+  <text x="480" y="58" text-anchor="middle" font-size="30" font-weight="bold" fill="#E36A98">PLANO DE PLANTA · TIENDA KHC KIDS</text>
+  <text x="480" y="88" text-anchor="middle" font-size="16" fill="#9A8A92">Local 3,00 × 6,00 m (18 m²) · Escala aprox. 1:50 · Medidas en metros</text>
+
+  <!-- ================= MUROS ================= -->
+  <rect x="196" y="146" width="14" height="928" fill="#5A4852"/>
+  <rect x="660" y="146" width="14" height="928" fill="#5A4852"/>
+  <rect x="196" y="1060" width="478" height="14" fill="#5A4852"/>
+  <!-- fachada: escaparate (vidrio) + pilar + puerta -->
+  <rect x="210" y="146" width="285" height="14" fill="#AEDCEA" stroke="#4E96BF" stroke-width="1"/>
+  <line x1="210" y1="153" x2="495" y2="153" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="495" y="146" width="30" height="14" fill="#5A4852"/>
+  <!-- puerta abre hacia afuera -->
+  <line x1="525" y1="153" x2="525" y2="18" stroke="#9A8A92" stroke-width="3"/>
+  <path d="M 660 153 A 135 135 0 0 0 525 18" fill="none" stroke="#9A8A92" stroke-width="1" stroke-dasharray="5 4"/>
+
+  <!-- ================= ESCAPARATE (interior) ================= -->
+  <rect x="240" y="180" width="40" height="40" rx="5" fill="#FFFFFF" stroke="#E36A98" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <rect x="330" y="180" width="40" height="40" rx="5" fill="#FFFFFF" stroke="#E36A98" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="305" y="240" text-anchor="middle" font-size="11" fill="#9A8A92">maniquíes sobre podios</text>
+  <text x="352" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#4E96BF">ESCAPARATE</text>
+
+  <!-- felpudo -->
+  <rect x="535" y="195" width="120" height="60" fill="none" stroke="#9A8A92" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="595" y="230" text-anchor="middle" font-size="10" fill="#9A8A92">felpudo</text>
+  <!-- A/C -->
+  <rect x="545" y="162" width="100" height="20" fill="none" stroke="#4E96BF" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="595" y="176" text-anchor="middle" font-size="10" fill="#4E96BF">A/C split</text>
+  <!-- espejo -->
+  <rect x="646" y="200" width="14" height="80" fill="#FFFFFF" stroke="#4E96BF" stroke-width="1.5"/>
+  <text x="640" y="246" text-anchor="end" font-size="10" fill="#4E96BF">espejo kids</text>
+
+  <!-- ================= ESTANTERÍAS PAREDES ================= -->
+  <!-- NIÑAS izquierda -->
+  <rect x="210" y="280" width="60" height="330" fill="#FFE3F1" stroke="#E36A98" stroke-width="1.5"/>
+  <line x1="216" y1="385" x2="264" y2="385" stroke="#E36A98" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="216" y1="490" x2="264" y2="490" stroke="#E36A98" stroke-width="1" stroke-dasharray="3 3"/>
+  <text transform="rotate(-90 240 445)" x="240" y="445" text-anchor="middle" font-size="17" font-weight="bold" fill="#E36A98">NIÑAS</text>
+  <!-- NIÑOS derecha -->
+  <rect x="600" y="280" width="60" height="330" fill="#DCEEFC" stroke="#4E96BF" stroke-width="1.5"/>
+  <line x1="606" y1="385" x2="654" y2="385" stroke="#4E96BF" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="606" y1="490" x2="654" y2="490" stroke="#4E96BF" stroke-width="1" stroke-dasharray="3 3"/>
+  <text transform="rotate(90 630 445)" x="630" y="445" text-anchor="middle" font-size="17" font-weight="bold" fill="#4E96BF">NIÑOS</text>
+  <!-- BEBÉS izquierda fondo -->
+  <rect x="210" y="650" width="60" height="320" fill="#FFE3D3" stroke="#D87A4A" stroke-width="1.5"/>
+  <text transform="rotate(-90 240 810)" x="240" y="810" text-anchor="middle" font-size="17" font-weight="bold" fill="#D87A4A">BEBÉS</text>
+  <!-- PIJAMAS & UNISEX derecha fondo -->
+  <rect x="600" y="650" width="60" height="320" fill="#EDE0EF" stroke="#9170C4" stroke-width="1.5"/>
+  <text transform="rotate(90 630 810)" x="630" y="810" text-anchor="middle" font-size="12" font-weight="bold" fill="#9170C4">PIJAMAS &amp; UNISEX</text>
+
+  <!-- alfombra bebés -->
+  <circle cx="320" cy="815" r="66" fill="#FFE3D3" opacity="0.5" stroke="#D87A4A" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="320" y="897" text-anchor="middle" font-size="11" fill="#D87A4A">alfombra ⌀1,1 m</text>
+
+  <!-- ================= MESAS CENTRALES ================= -->
+  <rect x="375" y="530" width="120" height="75" rx="6" fill="#FFF1CF" stroke="#E0A93A" stroke-width="1.5"/>
+  <text x="435" y="560" text-anchor="middle" font-size="13" font-weight="bold" fill="#B07E1F">MESA 1</text>
+  <text x="435" y="578" text-anchor="middle" font-size="11" fill="#B07E1F">OFERTAS</text>
+  <text x="435" y="596" text-anchor="middle" font-size="10" fill="#9A8A92">0,8 × 0,5 m</text>
+  <rect x="375" y="720" width="120" height="75" rx="6" fill="#FFF1CF" stroke="#E0A93A" stroke-width="1.5"/>
+  <text x="435" y="750" text-anchor="middle" font-size="13" font-weight="bold" fill="#B07E1F">MESA 2</text>
+  <text x="435" y="768" text-anchor="middle" font-size="11" fill="#B07E1F">COMBOS</text>
+  <text x="435" y="786" text-anchor="middle" font-size="10" fill="#9A8A92">0,8 × 0,5 m</text>
+
+  <!-- ================= CAJA Y FONDO ================= -->
+  <rect x="240" y="975" width="180" height="82" rx="8" fill="#E3F3E0" stroke="#5C8A3C" stroke-width="1.5"/>
+  <text x="330" y="1012" text-anchor="middle" font-size="13" font-weight="bold" fill="#5C8A3C">CAJA / MOSTRADOR</text>
+  <text x="330" y="1032" text-anchor="middle" font-size="11" fill="#5C8A3C">1,2 × 0,55 m</text>
+  <rect x="270" y="988" width="34" height="18" fill="#FFFFFF" stroke="#5C8A3C" stroke-width="1"/>
+  <rect x="450" y="1000" width="205" height="60" rx="4" fill="#EDE0EF" stroke="#9170C4" stroke-width="1.5"/>
+  <text x="552" y="1026" text-anchor="middle" font-size="12" font-weight="bold" fill="#9170C4">REPISAS</text>
+  <text x="552" y="1046" text-anchor="middle" font-size="10" fill="#9170C4">mochilas &amp; accesorios</text>
+
+  <!-- ================= COTAS ================= -->
+  <line x1="210" y1="115" x2="660" y2="115" stroke="#5A4852" stroke-width="1.2" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="435" y="106" text-anchor="middle" font-size="15" font-weight="bold" fill="#5A4852">3,00 m</text>
+  <line x1="172" y1="160" x2="172" y2="1060" stroke="#5A4852" stroke-width="1.2" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text transform="rotate(-90 161 610)" x="161" y="610" text-anchor="middle" font-size="15" font-weight="bold" fill="#5A4852">6,00 m</text>
+  <line x1="210" y1="136" x2="495" y2="136" stroke="#4E96BF" stroke-width="1" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="352" y="128" text-anchor="middle" font-size="12" fill="#4E96BF">1,90 m</text>
+  <line x1="525" y1="136" x2="660" y2="136" stroke="#4E96BF" stroke-width="1" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="592" y="128" text-anchor="middle" font-size="12" fill="#4E96BF">0,90 m</text>
+  <line x1="210" y1="272" x2="270" y2="272" stroke="#9A8A92" stroke-width="1" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="240" y="264" text-anchor="middle" font-size="10" fill="#9A8A92">0,40</text>
+  <line x1="270" y1="567" x2="375" y2="567" stroke="#9A8A92" stroke-width="1" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="322" y="559" text-anchor="middle" font-size="11" fill="#9A8A92">≈0,70 m</text>
+  <line x1="495" y1="567" x2="600" y2="567" stroke="#9A8A92" stroke-width="1" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="547" y="559" text-anchor="middle" font-size="11" fill="#9A8A92">≈0,70 m</text>
+
+  <!-- ================= LEYENDA ================= -->
+  <text x="480" y="1120" text-anchor="middle" font-size="20" font-weight="bold" fill="#E36A98">LEYENDA · ZONAS DE LA TIENDA</text>
+  <g font-size="13" fill="#5A4852">
+    <rect x="60"  y="1146" width="26" height="18" fill="#FFE3F1" stroke="#EADFE6"/>
+    <text x="96" y="1160">NIÑAS — vestidos, conjuntos, faldas · barra doble + repisas</text>
+    <rect x="60"  y="1188" width="26" height="18" fill="#DCEEFC" stroke="#EADFE6"/>
+    <text x="96" y="1202">NIÑOS — franelas, conjuntos, bermudas · barra doble + repisas</text>
+    <rect x="60"  y="1230" width="26" height="18" fill="#FFE3D3" stroke="#EADFE6"/>
+    <text x="96" y="1244">BEBÉS — bodies, mamelucos, ajuares · estantería + cuna</text>
+    <rect x="60"  y="1272" width="26" height="18" fill="#EDE0EF" stroke="#EADFE6"/>
+    <text x="96" y="1286">PIJAMAS &amp; UNISEX — pijamas, polos, accesorios de pared</text>
+    <rect x="520" y="1146" width="26" height="18" fill="#FFF1CF" stroke="#EADFE6"/>
+    <text x="556" y="1160">MESAS CENTRALES — ofertas (1) · combos (2)</text>
+    <rect x="520" y="1188" width="26" height="18" fill="#E3F3E0" stroke="#EADFE6"/>
+    <text x="556" y="1202">CAJA — mostrador 1,2×0,55 con POS · repisa mochilas</text>
+    <rect x="520" y="1230" width="26" height="18" fill="#AEDCEA" stroke="#EADFE6"/>
+    <text x="556" y="1244">ESCAPARATE — vidrio 1,90 m · maniquíes sobre podios</text>
+    <rect x="520" y="1272" width="26" height="18" fill="#FFFFFF" stroke="#EADFE6"/>
+    <text x="556" y="1286">PASILLO central ≈0,70 m · puerta abre hacia afuera</text>
+  </g>
+
+  <text x="60" y="1330" font-size="16" font-weight="bold" fill="#E36A98">DETALLES TÉCNICOS</text>
+  <g font-size="12.5" fill="#5A4852">
+    <text x="60" y="1358">• Barra de colgar a 1,20 m (altura niños) y repisas cada 0,45 m de altura</text>
+    <text x="60" y="1384">• Espejo infantil (0,60–1,20 m) junto a la entrada · felpudo de bienvenida</text>
+    <text x="60" y="1410">• A/C split 12.000 BTU sobre la puerta — imprescindible para clima tropical</text>
+    <text x="60" y="1436">• Iluminación: riel LED con 8 spots + tiras cálidas bajo repisas</text>
+    <text x="60" y="1462">• Techo decorado: nubes + guirnalda de globos pastel</text>
+    <text x="60" y="1488">• Punto de venta (TPV) con cajón monedero + 1 cámara de seguridad</text>
+  </g>
+
+  <line x1="60" y1="1520" x2="900" y2="1520" stroke="#EADFE6" stroke-width="1.5"/>
+  <text x="480" y="1548" text-anchor="middle" font-size="12" fill="#9A8A92">KHC KIDS · Proyecto tienda física 3 × 6 m · Plano de planta · Escala aprox. 1:50 · Todas las medidas en metros</text>
+</svg>
