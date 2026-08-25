@@ -1,0 +1,26 @@
+# Dependencias y builds
+node_modules/
+.next/
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Entornos y secretos
+.env
+.env.*
+!.env.example
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Copias de seguridad y exportaciones del workspace (no se despliegan)
+workspace-*.zip
+*.zip
+
+# Vercel
+.vercel/
