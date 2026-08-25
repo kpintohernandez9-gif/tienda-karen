@@ -3,35 +3,231 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KHC Kids · Ropa para bebés y niños de 0 a 10 años</title>
-  <meta name="description" content="KHC Kids — ropa cómoda y bonita para tus peques, desde 0 meses hasta 10 años. Pijamas, ropa de salir, conjuntos y accesorios a precios económicos." />
+  <title>KHC Kids · Ropa infantil de gran calidad, cómoda, duradera y exclusiva</title>
+  <meta name="description" content="KHC Kids — boutique de ropa infantil de 0 a 10 años. Tejidos seleccionados, costuras reforzadas y ediciones limitadas: pocas unidades de cada diseño." />
+  <link rel="icon" type="image/png" href="img/logo-khc-kids-avatar.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%9C%3C/text%3E%3C/svg%3E" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- HEADER (rendered by app.js) -->
-  <header id="hdr"></header>
 
-  <!-- MAIN VIEW -->
-  <main id="app"></main>
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Edición limitada</span><i>✦</i><span>Tejidos seleccionados</span><i>✦</i><span>Costuras reforzadas</span><i>✦</i><span>Pocas unidades por diseño</span><i>✦</i><span>Cómoda y duradera</span><i>✦</i>
+      <span>Edición limitada</span><i>✦</i><span>Tejidos seleccionados</span><i>✦</i><span>Costuras reforzadas</span><i>✦</i><span>Pocas unidades por diseño</span><i>✦</i><span>Cómoda y duradera</span><i>✦</i>
+    </div>
+  </div>
 
-  <!-- FOOTER (rendered by app.js) -->
-  <footer id="ftr"></footer>
+  <!-- HEADER -->
+  <header class="site" id="hdr">
+    <div class="wrap nav">
+      <a class="brand" href="#">
+        <span class="brand-badge"><img src="img/logo-khc-kids-badge.png" alt="Logo KHC Kids"></span>
+        <span class="brand-name">KHC Kids<small>boutique infantil</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#coleccion">Colección</a>
+        <a href="#calidad">Calidad</a>
+        <a href="#sello">El sello</a>
+        <a href="#reservar">Reservas</a>
+        <a href="#coleccion" class="btn btn-primary">Ver colección</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- CART DRAWER -->
-  <div id="cart-drawer"></div>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="rv in">
+          <span class="eyebrow">Boutique infantil · 0 a 10 años</span>
+          <h1>Calidad que se siente. <em>Diseños que no se repiten.</em></h1>
+          <p class="hero-sub">Ropa infantil de gran calidad: cómoda, duradera y exclusiva. Cada diseño se fabrica en pocas unidades, para que tu peque vista algo realmente único.</p>
+          <div class="hero-ctas">
+            <a href="#coleccion" class="btn btn-primary">Ver la colección</a>
+            <a href="#calidad" class="btn btn-ghost">Por qué KHC Kids</a>
+          </div>
+          <div class="hero-trust">
+            <span class="stars">★★★★★</span>
+            <span><strong>4,9/5</strong> · familias que repiten edición tras edición</span>
+          </div>
+        </div>
+        <div class="hero-visual rv in d1">
+          <div class="hero-frame"><img src="img/hero.jpg" alt="Dos peques riendo con ropa suave de KHC Kids"></div>
+          <div class="hero-seal">
+            <img src="img/logo-khc-kids-bordado-chest.png" alt="Sello bordado KHC Kids">
+            <p><strong>Sello de la casa</strong>Cada prenda lleva nuestro sello bordado.</p>
+          </div>
+          <span class="hero-dot">Edición limitada</span>
+        </div>
+      </div>
+    </section>
 
-  <!-- PRODUCT MODAL -->
-  <div id="modal"></div>
+    <!-- PILARES -->
+    <section class="pillars" id="calidad">
+      <div class="wrap">
+        <div class="section-head rv">
+          <span class="eyebrow">Nuestra promesa</span>
+          <h2>Ropa de <em>gran calidad</em>, de principio a fin</h2>
+          <p>No hacemos ropa en masa. Seleccionamos cada tejido, cuidamos cada costura y lanzamos pocas unidades de cada diseño.</p>
+        </div>
+        <div class="pillars-grid">
+          <div class="pillar rv">
+            <div class="icon">🌿</div>
+            <span class="num">01</span>
+            <h3>Tejidos seleccionados</h3>
+            <p>Algodón suave y transpirable, amable con la piel. Prendas que se sienten tan bien como se ven.</p>
+          </div>
+          <div class="pillar rv d1">
+            <div class="icon"></div>
+            <span class="num">02</span>
+            <h3>Comodidad absoluta</h3>
+            <p>Cortes pensados para gatear, jugar y crecer: ni aprietan ni estorban. Comodidad de verdad, todo el día.</p>
+          </div>
+          <div class="pillar rv d2">
+            <div class="icon">🧵</div>
+            <span class="num">03</span>
+            <h3>Durabilidad real</h3>
+            <p>Costuras reforzadas y colores que resisten lavado tras lavado. Ropa que dura… y se hereda.</p>
+          </div>
+          <div class="pillar rv d3">
+            <div class="icon">✦</div>
+            <span class="num">04</span>
+            <h3>Exclusividad</h3>
+            <p>Fabricamos pocas unidades de cada diseño. Cuando se acaba, no vuelve. Así de especial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- TOAST -->
-  <div id="toast" class="toast"></div>
+    <!-- SELLO -->
+    <section class="seal" id="sello">
+      <div class="wrap seal-grid">
+        <div class="seal-visual rv">
+          <div class="seal-card"><img src="img/logo-khc-kids-bordado-badge.png" alt="Sello bordado KHC Kids"></div>
+          <span class="seal-chip">Bordado en cada prenda</span>
+        </div>
+        <div class="rv d1">
+          <span class="eyebrow">El sello de la casa</span>
+          <h2>Cada prenda pasa <em>nuestro control</em> antes de llegar a ti</h2>
+          <p class="lead">Revisamos cada pieza una a una y la terminamos con nuestro sello bordado: el mismo diseño de nuestro logo, cosido con cariño para que acompañe a tu peque durante mucho tiempo.</p>
+          <ul class="seal-list">
+            <li><span class="tick">✓</span>Control de costuras y acabados, prenda por prenda.</li>
+            <li><span class="tick">✓</span>Tejidos suaves al tacto, sin etiquetas que rascan.</li>
+            <li><span class="tick">✓</span>Tintes y estampados que resisten el sol y la lavadora.</li>
+            <li><span class="tick">✓</span>Sello KHC Kids bordado, garantía de edición limitada.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <!-- MOBILE NAV OVERLAY -->
-  <div id="mobile-nav" class="mobile-nav"></div>
+    <!-- COLECCIÓN -->
+    <section class="collection" id="coleccion">
+      <div class="wrap">
+        <div class="section-head rv">
+          <span class="eyebrow">La colección</span>
+          <h2>Piezas únicas, <em>en pocas unidades</em></h2>
+          <p>Cada diseño vuela. Si te enamora una pieza, resérvala antes de que se agote: cuando se acaba, no vuelve.</p>
+        </div>
+        <div class="filters rv">
+          <button class="filter-btn active" data-filter="all">Todo</button>
+          <button class="filter-btn" data-filter="bebe">Bebés 0-24m</button>
+          <button class="filter-btn" data-filter="nina">Niñas</button>
+          <button class="filter-btn" data-filter="nino">Niños</button>
+        </div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <!-- EXCLUSIVIDAD -->
+    <section class="exclusive" id="reservar">
+      <div class="wrap rv">
+        <span class="eyebrow">Exclusividad real</span>
+        <h2>Pocas unidades por diseño. <em>Cuando vuelan, no vuelven.</em></h2>
+        <p>Reserva la talla de tu peque y te escribimos para confirmarla. Así de simple, así de exclusivo.</p>
+        <a href="#coleccion" class="btn btn-primary">Reservar mi diseño</a>
+      </div>
+    </section>
+
+    <!-- PASOS -->
+    <section class="steps">
+      <div class="wrap">
+        <div class="section-head rv" style="margin-left:auto;margin-right:auto;text-align:center;max-width:560px">
+          <span class="eyebrow" style="justify-content:center">Cómo reservar</span>
+          <h2>Tres pasos y <em>lista</em></h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step rv"><div class="n">1</div><h3>Elige su diseño</h3><p>Explora la colección y filtra por edad: bebés, niñas o niños.</p></div>
+          <div class="step rv d1"><div class="n">2</div><h3>Reserva la talla</h3><p>Pulsa «Reservar», elige talla y déjanos tu contacto. Sin compromiso.</p></div>
+          <div class="step rv d2"><div class="n">3</div><h3>Recíbelo en casa</h3><p>Confirmamos tu reserva y te lo enviamos envuelto con cariño.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section class="voices">
+      <div class="wrap">
+        <div class="voices-grid">
+          <div class="voice rv">
+            <div class="stars">★★★★★</div>
+            <p>«La calidad se nota nada más sacar la prenda de la bolsa. El vestido ha pasado por mil lavados y parece nuevo.»</p>
+            <footer>Laura M. <span>mamá de Vega, 3 años</span></footer>
+          </div>
+          <div class="voice rv d1">
+            <div class="stars">★★★★★</div>
+            <p>«Me encanta que haya pocas unidades: en el cole nadie va igual que mi hijo. Y el sello bordado es una monada.»</p>
+            <footer>Andrea R. <span>mamá de Thiago, 5 años</span></footer>
+          </div>
+          <div class="voice rv d2">
+            <div class="stars">★★★★★</div>
+            <p>«Compré para el primero y ahora hereda el pequeño. La ropa aguanta de verdad. Repetimos en cada edición.»</p>
+            <footer>Carmen G. <span>mamá de dos peques</span></footer>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand">
+            <span class="brand-badge"><img src="img/logo-khc-kids-badge.png" alt="Logo KHC Kids"></span>
+            <span class="brand-name">KHC Kids<small>boutique infantil</small></span>
+          </div>
+          <p class="foot-note">Ropa infantil de gran calidad, cómoda, duradera y exclusiva. Pocas unidades de cada diseño, hechas con cariño.</p>
+        </div>
+        <div class="foot-links">
+          <h4>Tienda</h4>
+          <a href="#coleccion">Colección</a>
+          <a href="#coleccion">Bebés 0-24m</a>
+          <a href="#coleccion">Niñas</a>
+          <a href="#coleccion">Niños</a>
+        </div>
+        <div class="foot-links">
+          <h4>La casa</h4>
+          <a href="#calidad">Nuestra calidad</a>
+          <a href="#sello">El sello KHC</a>
+          <a href="#reservar">Cómo reservar</a>
+        </div>
+      </div>
+      <div class="foot-base">
+        <span>© 2026 KHC Kids · Hecho con cariño para los tuyos.</span>
+        <span>Ediciones limitadas · 0 a 10 años</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL RESERVA -->
+  <div class="modal" id="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" id="modal-card"></div>
+  </div>
 
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
