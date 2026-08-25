@@ -1,0 +1,51 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/khc-kids/index.html" },
+    { "source": "/index", "destination": "/khc-kids/index.html" },
+    { "source": "/index.html", "destination": "/khc-kids/index.html" },
+    { "source": "/khc-kids", "destination": "/khc-kids/index.html" },
+    { "source": "/khc-kids/", "destination": "/khc-kids/index.html" },
+
+    { "source": "/khc-kids/(.*)", "destination": "/khc-kids/$1" },
+
+    { "source": "/css/(.*)", "destination": "/khc-kids/css/$1" },
+    { "source": "/js/(.*)", "destination": "/khc-kids/js/$1" },
+    { "source": "/img/(.*)", "destination": "/khc-kids/img/$1" },
+
+    { "source": "/css/(.*)", "destination": "/khc-kids/css/$1.html" },
+    { "source": "/js/(.*)", "destination": "/khc-kids/js/$1.html" },
+    { "source": "/img/(.*)", "destination": "/khc-kids/img/$1.html" },
+
+    { "source": "/logos-khc-kids", "destination": "/khc-kids/logos-khc-kids.html" },
+    { "source": "/logos-khc-kids.html", "destination": "/khc-kids/logos-khc-kids.html" },
+    { "source": "/diseno-tienda-khc-kids", "destination": "/khc-kids/diseno-tienda-khc-kids.html" },
+    { "source": "/diseno-tienda-khc-kids.html", "destination": "/khc-kids/diseno-tienda-khc-kids.html" },
+
+    { "source": "/Catalogo-Tienda-KHC-Kids.pdf", "destination": "/khc-kids/Catalogo-Tienda-KHC-Kids.pdf" },
+    { "source": "/Catalogo-KHC-Kids-Shein.pdf", "destination": "/khc-kids/Catalogo-KHC-Kids-Shein.pdf" },
+    { "source": "/Pedido-Inicial-Tienda-KHC-Kids.xlsx", "destination": "/khc-kids/Pedido-Inicial-Tienda-KHC-Kids.xlsx" },
+    { "source": "/Plan-de-Negocio-KHC-Kids.xlsx", "destination": "/khc-kids/Plan-de-Negocio-KHC-Kids.xlsx" },
+    { "source": "/plano-tienda-khc-kids.svg", "destination": "/khc-kids/plano-tienda-khc-kids.svg" }
+  ],
+  "headers": [
+    {
+      "source": "/khc-kids/img/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/khc-kids/css/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+    },
+    {
+      "source": "/khc-kids/js/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+    },
+    {
+      "source": "/khc-kids/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+    }
+  ]
+}
