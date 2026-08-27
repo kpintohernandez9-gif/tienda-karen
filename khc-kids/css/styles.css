@@ -35,6 +35,8 @@ body {
 
 img { max-width: 100%; display: block; }
 
+::selection { background: var(--blush); color: var(--rose-deep); }
+
 .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
 
 /* ---------- micro labels & titulos ---------- */
@@ -180,14 +182,17 @@ header.site.scrolled { border-color: var(--line); box-shadow: 0 10px 30px -20px 
 
 /* ---------- colección ---------- */
 .collection { padding: 100px 0; background: #fff; border-top: 1px solid var(--line); }
-.filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
+.filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
 .filter-btn {
   border: 1.5px solid var(--line); background: transparent; color: var(--ink-soft);
   border-radius: 999px; padding: 10px 22px; font-family: var(--sans); font-size: .88rem;
   font-weight: 600; cursor: pointer; transition: all .25s ease;
 }
 .filter-btn:hover { border-color: var(--rose); color: var(--rose-deep); }
-.filter-btn.active { background: var(--ink); border-color: var(--ink); color: #FFF7F0; }
+.filter-btn.active { background: var(--ink); border-color: var(--ink); color: #FFF7F0; box-shadow: var(--shadow-soft); }
+.filter-btn:focus-visible, .btn:focus-visible, .btn-card:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.grid-count { font-size: .82rem; color: var(--ink-soft); letter-spacing: .12em; text-transform: uppercase; margin-bottom: 30px; }
+.grid-count::before { content: '— '; color: var(--gold); }
 
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .card {
@@ -209,8 +214,15 @@ header.site.scrolled { border-color: var(--line); box-shadow: 0 10px 30px -20px 
   font-size: .66rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
   border-radius: 999px; padding: 7px 13px;
 }
+.badge-tag.warn { background: var(--rose-deep); color: #fff; }
 .card-body { padding: 24px 24px 26px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .card-type { font-size: .68rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+
+/* acento por categoría */
+.card[data-type="pueri"] .card-type { color: #4E96BF; }
+.card[data-type="jugu"] .card-type { color: #5C8A3C; }
+.card[data-type="textil"] .card-type { color: #8B6BB0; }
+.card[data-type="acc"] .card-type { color: #D87A4A; }
 .card-name { font-family: var(--serif); font-size: 1.28rem; }
 .card-age { font-size: .85rem; color: var(--ink-soft); }
 .card-desc { font-size: .88rem; color: var(--ink-soft); flex: 1; }
@@ -218,6 +230,7 @@ header.site.scrolled { border-color: var(--line); box-shadow: 0 10px 30px -20px 
 .stockbar i { display: block; height: 100%; background: linear-gradient(90deg, var(--rose-bright), var(--rose-deep)); border-radius: 99px; }
 .card-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; gap: 12px; }
 .price { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; }
+.price .cur { font-size: .85em; margin-right: 2px; color: var(--rose-deep); }
 .price small { font-family: var(--sans); font-size: .72rem; color: var(--ink-soft); font-weight: 500; display: block; letter-spacing: .08em; }
 .btn-card {
   background: var(--blush); color: var(--rose-deep); border: none; border-radius: 999px;

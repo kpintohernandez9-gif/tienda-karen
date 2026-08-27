@@ -1,26 +1,35 @@
 /* ============================================================
    KHC KIDS · Colección premium (edición limitada)
-   Ropa de gran calidad, cómoda, duradera y exclusiva.
-   Cada diseño se fabrica en pocas unidades.
-   Catálogo completo: solo de 0 a 6 años.
+   Ropa, puericultura, juguetes y textil del bebé.
+   Calidad grande, cómoda y duradera · Precios en $ accesibles.
+   Catálogo completo: de 0 a 6 años.
    ============================================================ */
+
+/* ---------- CATEGORÍAS DE LA TIENDA ---------- */
 window.KHC_TYPES = [
-  { id: 'bebe', label: 'Bebés 0-24m' },
-  { id: 'nina', label: 'Niñas 1-6 años' },
-  { id: 'nino', label: 'Niños 1-6 años' },
-  { id: 'acc',  label: 'Accesorios' }
+  { id: 'bebe',  icon: '👶', label: 'Ropa Bebés 0-24m' },
+  { id: 'nina',  icon: '👧', label: 'Niñas 1-6 años' },
+  { id: 'nino',  icon: '👦', label: 'Niños 1-6 años' },
+  { id: 'pueri', icon: '🍼', label: 'Puericultura & Comida' },
+  { id: 'jugu',  icon: '🧸', label: 'Juguetes' },
+  { id: 'textil', icon: '🧺', label: 'Mantas & Pañales' },
+  { id: 'acc',   icon: '🎀', label: 'Accesorios' }
 ];
 
 var S_BEBE  = ['0-3M', '3-6M', '6-12M', '12-18M', '18-24M'];
 var S_16    = ['1-2A', '2-3A', '3-4A', '5-6A'];
 var S_26    = ['2-3A', '3-4A', '5-6A'];
 var S_36    = ['3-4A', '5-6A'];
+var U       = ['Talla única'];
 
 window.KHC_PRODUCTS = [
-  /* ---------------- BEBÉS · 0-24 MESES ---------------- */
+
+  /* ============================================================
+     1 · ROPA BEBÉS · 0-24 MESES
+     ============================================================ */
   {
     id: 'p01', name: 'Body de Algodón Suave',
-    type: 'bebe', typeLabel: 'Bebés', age: 'bebe', ageLabel: '0-24 meses', gender: 'unisex',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '0-24 meses', gender: 'unisex',
     price: 14, oldPrice: null, img: 'img/01-bodies.jpg',
     units: 7, totalUnits: 40, tag: 'Edición limitada',
     sizes: S_BEBE,
@@ -28,7 +37,7 @@ window.KHC_PRODUCTS = [
   },
   {
     id: 'p02', name: 'Pelele de Noche Estrella',
-    type: 'bebe', typeLabel: 'Bebés', age: 'bebe', ageLabel: '0-24 meses', gender: 'unisex',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '0-24 meses', gender: 'unisex',
     price: 18, oldPrice: null, img: 'img/02-pelele.jpg',
     units: 5, totalUnits: 35, tag: 'Edición limitada',
     sizes: ['0-3M', '3-6M', '6-12M', '12-18M'],
@@ -36,7 +45,7 @@ window.KHC_PRODUCTS = [
   },
   {
     id: 'p03', name: 'Conjunto Recién Nacido',
-    type: 'bebe', typeLabel: 'Bebés', age: 'bebe', ageLabel: '0-24 meses', gender: 'unisex',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '0-24 meses', gender: 'unisex',
     price: 22, oldPrice: null, img: 'img/03-conjunto-rn.jpg',
     units: 9, totalUnits: 40, tag: 'Nuevo diseño',
     sizes: ['6-12M', '12-18M', '18-24M'],
@@ -44,7 +53,7 @@ window.KHC_PRODUCTS = [
   },
   {
     id: 'p13', name: 'Mameluco Fresquito · Pack 2',
-    type: 'bebe', typeLabel: 'Bebés', age: 'bebe', ageLabel: '0-18 meses', gender: 'unisex',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '0-18 meses', gender: 'unisex',
     price: 18, oldPrice: null, img: 'img/t-mameluco.jpg',
     units: 8, totalUnits: 35, tag: 'Nuevo diseño',
     sizes: ['0-3M', '3-6M', '6-12M', '12-18M'],
@@ -52,7 +61,7 @@ window.KHC_PRODUCTS = [
   },
   {
     id: 'p14', name: 'Bata Toalla con Capucha',
-    type: 'bebe', typeLabel: 'Bebés', age: 'bebe', ageLabel: '6-24 meses', gender: 'unisex',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '6-24 meses', gender: 'unisex',
     price: 20, oldPrice: null, img: 'img/n-bata-toalla.jpg',
     units: 6, totalUnits: 30, tag: 'Edición limitada',
     sizes: ['6-12M', '12-18M', '18-24M'],
@@ -60,7 +69,7 @@ window.KHC_PRODUCTS = [
   },
   {
     id: 'p15', name: 'Set Regalo Recién Nacido · 5 piezas',
-    type: 'bebe', typeLabel: 'Bebés', age: 'bebe', ageLabel: '0-6 meses', gender: 'unisex',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '0-6 meses', gender: 'unisex',
     price: 28, oldPrice: null, img: 'img/n-setrn.jpg',
     units: 4, totalUnits: 25, tag: 'Últimas unidades',
     sizes: ['0-3M', '3-6M'],
@@ -68,14 +77,48 @@ window.KHC_PRODUCTS = [
   },
   {
     id: 'p16', name: 'Enterizo Polar Orejas de Oso',
-    type: 'bebe', typeLabel: 'Bebés', age: 'bebe', ageLabel: '3-24 meses', gender: 'unisex',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '3-24 meses', gender: 'unisex',
     price: 26, oldPrice: null, img: 'img/g-enterizo-bebe.jpg',
     units: 6, totalUnits: 30, tag: 'Nuevo diseño',
     sizes: ['3-6M', '6-12M', '12-18M', '18-24M'],
     desc: 'Mullidito por dentro y por fuera, con capucha de orejas que derrite corazones. Abrigo total sin peso para el invierno del bebé.'
   },
+  {
+    id: 'p63', name: 'Conjunto Punto Clásico Bebé',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '0-24 meses', gender: 'unisex',
+    price: 26, oldPrice: null, img: 'img/r-conjunto-punto.jpg',
+    units: 6, totalUnits: 30, tag: 'Nuevo diseño',
+    sizes: S_BEBE,
+    desc: 'Chaquetita y pantalón de punto en crema y camel: abriga sin apretar y viste elegante en cualquier ocasión. Punto suave que no pica.'
+  },
+  {
+    id: 'p64', name: 'Body Volantes de Encaje',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '0-24 meses', gender: 'nina',
+    price: 15, oldPrice: null, img: 'img/r-body-volantes.jpg',
+    units: 9, totalUnits: 42, tag: 'Edición limitada',
+    sizes: S_BEBE,
+    desc: 'Body rosa empolvado con volantitos de encaje suave y broches fáciles. Dulce para fotos, cómodo para todo el día.'
+  },
+  {
+    id: 'p70', name: 'Pijama Nubes Pastel · Pack 2',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '0-24 meses', gender: 'unisex',
+    price: 16, oldPrice: null, img: 'img/r-pijama-nubes.jpg',
+    units: 8, totalUnits: 36, tag: 'Nuevo diseño',
+    sizes: S_BEBE,
+    desc: 'Dos pijamas de algodón con estampado de nubes y estrellitas: uno rosa, uno celeste. Suavecitos para noches de cuento.'
+  },
+  {
+    id: 'p71', name: 'Conjunto Bautizo Suave',
+    type: 'bebe', typeLabel: 'Ropa Bebés', age: 'bebe', ageLabel: '0-18 meses', gender: 'unisex',
+    price: 21, oldPrice: null, img: 'img/r-conjunto-bautizo.jpg',
+    units: 5, totalUnits: 24, tag: 'Edición limitada',
+    sizes: ['3-6M', '6-12M', '12-18M'],
+    desc: 'Blusita de punto con cuello de encaje y culotte crema con lacito: el conjunto de los días grandes, a precio pequeño.'
+  },
 
-  /* ---------------- NIÑAS · 1-6 AÑOS ---------------- */
+  /* ============================================================
+     2 · ROPA NIÑAS · 1-6 AÑOS
+     ============================================================ */
   {
     id: 'p04', name: 'Vestido Floral Primavera',
     type: 'nina', typeLabel: 'Niñas', age: 'nina', ageLabel: '1-6 años', gender: 'nina',
@@ -244,8 +287,66 @@ window.KHC_PRODUCTS = [
     sizes: S_26,
     desc: 'Top y leggings en lavanda y menta: listos para bailar, estirar y correr. Elástico real, colores que duran.'
   },
+  {
+    id: 'p65', name: 'Vestido Lino Lazo',
+    type: 'nina', typeLabel: 'Niñas', age: 'nina', ageLabel: '2-6 años', gender: 'nina',
+    price: 29, oldPrice: null, img: 'img/r-vestido-lino.jpg',
+    units: 5, totalUnits: 28, tag: 'Nuevo diseño',
+    sizes: S_26,
+    desc: 'Lino crema con cinturón lazo de satén: elegante sin esfuerzo y fresco para toda ocasión. Incluye coletero a juego.'
+  },
+  {
+    id: 'p66', name: 'Cárdigan Perla Botones',
+    type: 'nina', typeLabel: 'Niñas', age: 'nina', ageLabel: '2-6 años', gender: 'nina',
+    price: 25, oldPrice: null, img: 'img/r-cardigan-perla.jpg',
+    units: 6, totalUnits: 30, tag: 'Edición limitada',
+    sizes: S_26,
+    desc: 'Punto blanco perla con botoncitos nacarados y vincha de lavanda de regalo. El abrigo fino que arregla cualquier look.'
+  },
+  {
+    id: 'p67', name: 'Conjunto Tul Ceremonia Niña',
+    type: 'nina', typeLabel: 'Niñas', age: 'nina', ageLabel: '3-6 años', gender: 'nina',
+    price: 30, oldPrice: null, img: 'img/r-conjunto-tul.jpg',
+    units: 4, totalUnits: 24, tag: 'Edición limitada',
+    sizes: S_36,
+    desc: 'Blusa de tul marfil con falda en capas y faja de satén: dos piezas de ceremonia a precio accesible.'
+  },
+  {
+    id: 'p72', name: 'Blusa Peter Pan Perla',
+    type: 'nina', typeLabel: 'Niñas', age: 'nina', ageLabel: '2-6 años', gender: 'nina',
+    price: 15, oldPrice: null, img: 'img/r-blusa-peterpan.jpg',
+    units: 10, totalUnits: 44, tag: 'Nuevo diseño',
+    sizes: S_26,
+    desc: 'Blusa blanca perla con cuello redondo y botoncitos forrados: arregla cualquier look por menos de lo que imaginas.'
+  },
+  {
+    id: 'p73', name: 'Falda Tul Pastel',
+    type: 'nina', typeLabel: 'Niñas', age: 'nina', ageLabel: '2-6 años', gender: 'nina',
+    price: 14, oldPrice: null, img: 'img/r-falda-tul.jpg',
+    units: 11, totalUnits: 46, tag: 'Edición limitada',
+    sizes: S_26,
+    desc: 'Tul en capas rosa empolvado con cintura de satén: gira, vuela y enamora. Combinable con todo su armario.'
+  },
+  {
+    id: 'p74', name: 'Chaqueta Borreguito Lazo',
+    type: 'nina', typeLabel: 'Niñas', age: 'nina', ageLabel: '1-6 años', gender: 'nina',
+    price: 24, oldPrice: null, img: 'img/r-chaqueta-borrego.jpg',
+    units: 6, totalUnits: 28, tag: 'Nuevo diseño',
+    sizes: S_16,
+    desc: 'Abrigo blandito de borreguito en crema con lacito de satén: calienta abrazando y pinta fotos preciosas.'
+  },
+  {
+    id: 'p75', name: 'Conjunto Blusa y Culotte Volantes',
+    type: 'nina', typeLabel: 'Niñas', age: 'nina', ageLabel: '1-6 años', gender: 'nina',
+    price: 19, oldPrice: null, img: 'img/r-conjunto-culotte.jpg',
+    units: 8, totalUnits: 34, tag: 'Edición limitada',
+    sizes: S_16,
+    desc: 'Blusa floral con mangas de volante y culotte rosa con lazo lateral: dos piezas que son mil conjuntos.'
+  },
 
-  /* ---------------- NIÑOS · 1-6 AÑOS ---------------- */
+  /* ============================================================
+     3 · ROPA NIÑOS · 1-6 AÑOS
+     ============================================================ */
   {
     id: 'p09', name: 'Pijama Dino',
     type: 'nino', typeLabel: 'Niños', age: 'nino', ageLabel: '1-6 años', gender: 'nino',
@@ -366,14 +467,180 @@ window.KHC_PRODUCTS = [
     sizes: S_26,
     desc: 'Camiseta y short de punto fino para noches cálidas. Fresco, suave y sin costuras que molestan.'
   },
+  {
+    id: 'p68', name: 'Conjunto Camisa y Tirantes',
+    type: 'nino', typeLabel: 'Niños', age: 'nino', ageLabel: '2-6 años', gender: 'nino',
+    price: 28, oldPrice: null, img: 'img/r-camisa-tirantes.jpg',
+    units: 5, totalUnits: 26, tag: 'Nuevo diseño',
+    sizes: S_26,
+    desc: 'Camisa blanca de cuello suave con shorts arena y tirantes desmontables: elegante de verdad, cómodo de verdad.'
+  },
+  {
+    id: 'p69', name: 'Chaleco Punto Caballero',
+    type: 'nino', typeLabel: 'Niños', age: 'nino', ageLabel: '2-6 años', gender: 'nino',
+    price: 22, oldPrice: null, img: 'img/r-chaleco-punto.jpg',
+    units: 7, totalUnits: 32, tag: 'Edición limitada',
+    sizes: S_26,
+    desc: 'Chaleco de punto verde salvia con camisa crema incluida: el conjunto que viste bonito sin arrugar.'
+  },
+  {
+    id: 'p76', name: 'Pantalón Lino Niño',
+    type: 'nino', typeLabel: 'Niños', age: 'nino', ageLabel: '2-6 años', gender: 'nino',
+    price: 21, oldPrice: null, img: 'img/r-pantalon-lino.jpg',
+    units: 7, totalUnits: 30, tag: 'Nuevo diseño',
+    sizes: S_26,
+    desc: 'Lino color arena con cintura elástica y cordón: fresco para el verano, elegante para la foto familiar.'
+  },
+  {
+    id: 'p77', name: 'Camisa Cuadros Pastel',
+    type: 'nino', typeLabel: 'Niños', age: 'nino', ageLabel: '1-6 años', gender: 'nino',
+    price: 18, oldPrice: null, img: 'img/r-camisa-cuadros.jpg',
+    units: 9, totalUnits: 38, tag: 'Edición limitada',
+    sizes: S_16,
+    desc: 'Cuadritos suaves en celeste y crema, algodón que no raspa y cuello que no incomoda. Elegante sin complicarse.'
+  },
+  {
+    id: 'p78', name: 'Jersey Cuello V Punto Fino',
+    type: 'nino', typeLabel: 'Niños', age: 'nino', ageLabel: '2-6 años', gender: 'nino',
+    price: 20, oldPrice: null, img: 'img/r-jersey-v.jpg',
+    units: 8, totalUnits: 34, tag: 'Edición limitada',
+    sizes: S_26,
+    desc: 'Punto fino verde salvia con franja crema: el jersey que va con camisa, solo o sobre la guarde.'
+  },
+  {
+    id: 'p79', name: 'Blazer Fino Niño',
+    type: 'nino', typeLabel: 'Niños', age: 'nino', ageLabel: '3-6 años', gender: 'nino',
+    price: 26, oldPrice: null, img: 'img/r-blazer-nino.jpg',
+    units: 5, totalUnits: 24, tag: 'Nuevo diseño',
+    sizes: S_36,
+    desc: 'Blazer azul grisáceo con parches en los codos y pañuelito de bolsillo: para bodas, bautizos y grandes días.'
+  },
 
-  /* ---------------- ACCESORIOS · 0-6 AÑOS ---------------- */
+  /* ============================================================
+     4 · PUERICULTURA & COMIDA · 0-36 MESES
+     ============================================================ */
+  {
+    id: 'p50', name: 'Teteros Cristal Pastel · Pack 2',
+    type: 'pueri', typeLabel: 'Puericultura', age: 'bebe', ageLabel: '0-24 meses', gender: 'unisex',
+    price: 16, oldPrice: null, img: 'img/a-teteros.jpg',
+    units: 9, totalUnits: 40, tag: 'Nuevo diseño',
+    sizes: U,
+    desc: 'Dos teteros de cristal con funda de silicona en rosa y salvia. Tetina de caucho natural, libre de BPA, flujo medio.'
+  },
+  {
+    id: 'p51', name: 'Vaso Entrenador 360° + Popote',
+    type: 'pueri', typeLabel: 'Puericultura', age: 'bebe', ageLabel: '6 meses+', gender: 'unisex',
+    price: 12, oldPrice: null, img: 'img/a-vaso.jpg',
+    units: 10, totalUnits: 40, tag: 'Edición limitada',
+    sizes: U,
+    desc: 'Vaso 360° a prueba de derrames y vaso de popote suave para el paso del biberón al vaso. Fácil de limpiar.'
+  },
+  {
+    id: 'p52', name: 'Set de Comida con Ventosa · 4 piezas',
+    type: 'pueri', typeLabel: 'Puericultura', age: 'bebe', ageLabel: '6 meses+', gender: 'unisex',
+    price: 18, oldPrice: null, img: 'img/a-set-comida.jpg',
+    units: 8, totalUnits: 35, tag: 'Nuevo diseño',
+    sizes: U,
+    desc: 'Plato dividido con ventosa que no se voltea, bol con tapa, cuchara y tenedor de silicona. Libre de BPA, apto lavavajillas.'
+  },
+  {
+    id: 'p53', name: 'Baberos de Silicona · Pack 2',
+    type: 'pueri', typeLabel: 'Puericultura', age: 'bebe', ageLabel: '6 meses+', gender: 'unisex',
+    price: 10, oldPrice: null, img: 'img/a-babero-silicona.jpg',
+    units: 12, totalUnits: 48, tag: 'Edición limitada',
+    sizes: U,
+    desc: 'Baberos enrollables con bolsillo recolector en rosa y amarillo: atrapan la comida, se aclaran en un segundo y duran para siempre.'
+  },
+  {
+    id: 'p54', name: 'Rasca Encías Frutitas',
+    type: 'pueri', typeLabel: 'Puericultura', age: 'bebe', ageLabel: '3 meses+', gender: 'unisex',
+    price: 9, oldPrice: null, img: 'img/a-rasca-frutas.jpg',
+    units: 11, totalUnits: 45, tag: 'Nuevo diseño',
+    sizes: U,
+    desc: 'Tres mordedores de frutas en silicona alimentaria con aro de madera: alivian las encías y son fáciles de agarrar.'
+  },
+  {
+    id: 'p55', name: 'Mordedor Nube & Estrella',
+    type: 'pueri', typeLabel: 'Puericultura', age: 'bebe', ageLabel: '0 meses+', gender: 'unisex',
+    price: 8, oldPrice: null, img: 'img/a-rasca-nube.jpg',
+    units: 12, totalUnits: 50, tag: 'Edición limitada',
+    sizes: U,
+    desc: 'Silicona suave en forma de nube y estrellita con aro de haya natural. Ligero, refrigerable y con texturas que calman.'
+  },
+
+  /* ============================================================
+     5 · JUGUETES · 0-6 AÑOS
+     ============================================================ */
+  {
+    id: 'p56', name: 'Ladrillitos Pastel · 60 piezas',
+    type: 'jugu', typeLabel: 'Juguetes', age: 'kids', ageLabel: '1-6 años', gender: 'unisex',
+    price: 22, oldPrice: null, img: 'img/j-bloques.jpg',
+    units: 7, totalUnits: 30, tag: 'Nuevo diseño',
+    sizes: U,
+    desc: 'Set de construcción estilo lego en tonos pastel: piezas grandes y redondeadas que apilan y encajan fácil. Motorcitos en marcha.'
+  },
+  {
+    id: 'p57', name: 'Puzzle de Madera Animalitos',
+    type: 'jugu', typeLabel: 'Juguetes', age: 'bebe', ageLabel: '1-3 años', gender: 'unisex',
+    price: 16, oldPrice: null, img: 'img/j-puzzle-madera.jpg',
+    units: 8, totalUnits: 32, tag: 'Edición limitada',
+    sizes: U,
+    desc: 'Elefante, león y conejo de madera haya con pomos fáciles de agarrar. Primeros puzzles que enseñan y decoran.'
+  },
+  {
+    id: 'p58', name: 'Piano de Patadas Pastel',
+    type: 'jugu', typeLabel: 'Juguetes', age: 'bebe', ageLabel: '0-3 años', gender: 'unisex',
+    price: 34, oldPrice: null, img: 'img/j-piano.jpg',
+    units: 5, totalUnits: 25, tag: 'Nuevo diseño',
+    sizes: U,
+    desc: 'Gimnasio y piano de patadas con arcos de peluches colgantes: melodías suaves, luces tenues y horas de pataditas felices.'
+  },
+  {
+    id: 'p59', name: 'Cubos Apilables Anidados',
+    type: 'jugu', typeLabel: 'Juguetes', age: 'bebe', ageLabel: '0-4 años', gender: 'unisex',
+    price: 14, oldPrice: null, img: 'img/j-cubos.jpg',
+    units: 9, totalUnits: 38, tag: 'Edición limitada',
+    sizes: U,
+    desc: 'Diez cubos que se apilan, encajan y esconden sorpresas: enseñan tamaños y números en rosa, salvia y celeste.'
+  },
+
+  /* ============================================================
+     6 · MANTAS & PAÑALES · TEXTIL DEL BEBÉ
+     ============================================================ */
+  {
+    id: 'p60', name: 'Mantita Muselina · Pack 2',
+    type: 'textil', typeLabel: 'Mantas & Pañales', age: 'bebe', ageLabel: '0-3 años', gender: 'unisex',
+    price: 18, oldPrice: null, img: 'img/x-mantita-muselina.jpg',
+    units: 8, totalUnits: 35, tag: 'Nuevo diseño',
+    sizes: U,
+    desc: 'Dos arrullos de doble gasa con ribete de pompones, en rosa y salvia: fresquita para el verano, acogedora todo el año.'
+  },
+  {
+    id: 'p61', name: 'Mantita Punto Cuna Calada',
+    type: 'textil', typeLabel: 'Mantas & Pañales', age: 'bebe', ageLabel: '0-3 años', gender: 'unisex',
+    price: 26, oldPrice: null, img: 'img/x-mantita-cuna.jpg',
+    units: 6, totalUnits: 28, tag: 'Edición limitada',
+    sizes: U,
+    desc: 'Punto grueso en crema y celeste con borde calado: abriga la cuna sin pesar y es la manta de las fotos que se guardan.'
+  },
+  {
+    id: 'p62', name: 'Pañales de Tela Ajustables · Pack 4',
+    type: 'textil', typeLabel: 'Mantas & Pañales', age: 'bebe', ageLabel: '0-2 años', gender: 'unisex',
+    price: 24, oldPrice: null, img: 'img/x-panales.jpg',
+    units: 6, totalUnits: 30, tag: 'Nuevo diseño',
+    sizes: ['Talla única · 3-15 kg'],
+    desc: 'Cuatro pañales con estampados pastel, capa exterior impermeable e insertos de bambú súper absorbentes. Botones que crecen con tu bebé.'
+  },
+
+  /* ============================================================
+     7 · ACCESORIOS · 0-6 AÑOS
+     ============================================================ */
   {
     id: 'p44', name: 'Baberos Bandana · Pack 3',
     type: 'acc', typeLabel: 'Accesorios', age: 'bebe', ageLabel: '0-24 meses', gender: 'unisex',
     price: 12, oldPrice: null, img: 'img/n-baberos.jpg',
     units: 10, totalUnits: 45, tag: 'Edición limitada',
-    sizes: ['Talla única'],
+    sizes: U,
     desc: 'Tres bandanas absorbentes con doble capa y cierre a presión. Babitas controladas con mucho estilo.'
   },
   {
@@ -413,7 +680,7 @@ window.KHC_PRODUCTS = [
     type: 'acc', typeLabel: 'Accesorios', age: 'kids', ageLabel: '1-6 años', gender: 'unisex',
     price: 24, oldPrice: null, img: 'img/n-mochila.jpg',
     units: 5, totalUnits: 28, tag: 'Últimas unidades',
-    sizes: ['Talla única'],
+    sizes: U,
     desc: 'Ligera, con tirantes acolchados y bolsillo para la merienda. La compañera oficial de la guarde.'
   }
 ];

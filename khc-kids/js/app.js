@@ -28,14 +28,17 @@
     return 'Quedan ' + p.units + ' de ' + p.totalUnits;
   }
 
+  function money(n) { return '$' + n; }
+
   function cardHTML(p) {
     var pct = Math.max(6, Math.round((p.units / p.totalUnits) * 100));
+    var tagClass = p.tag === 'Últimas unidades' ? ' warn' : '';
     return (
       '<article class="card rv in" data-type="' + p.type + '">' +
         '<div class="card-media">' +
           '<img src="' + p.img + '" alt="' + p.name + '" loading="lazy">' +
           '<span class="badge-stock">' + stockLabel(p) + '</span>' +
-          '<span class="badge-tag">' + p.tag + '</span>' +
+          '<span class="badge-tag' + tagClass + '">' + p.tag + '</span>' +
         '</div>' +
         '<div class="card-body">' +
           '<span class="card-type">' + p.typeLabel + ' · ' + p.ageLabel + '</span>' +
@@ -43,7 +46,7 @@
           '<p class="card-desc">' + p.desc + '</p>' +
           '<div class="stockbar" title="' + stockLabel(p) + ' unidades"><i style="width:' + pct + '%"></i></div>' +
           '<div class="card-foot">' +
-            '<span class="price">' + p.price + ' €<small>edición limitada</small></span>' +
+            '<span class="price"><span class="cur">$</span>' + p.price + '<small>edición limitada</small></span>' +
             '<button class="btn-card" data-reservar="' + p.id + '">Reservar</button>' +
           '</div>' +
         '</div>' +
@@ -54,6 +57,10 @@
   function render(filter) {
     var list = filter === 'all' ? products : products.filter(function (p) { return p.type === filter; });
     grid.innerHTML = list.map(cardHTML).join('');
+    var counter = document.getElementById('grid-count');
+    if (counter) {
+      counter.textContent = list.length + (list.length === 1 ? ' artículo' : ' artículos');
+    }
   }
   render('all');
 
@@ -62,6 +69,14 @@
       document.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
       btn.classList.add('active');
       render(btn.dataset.filter);
+    });
+  });
+
+  /* enlaces de categoría desde el footer / hero */
+  document.querySelectorAll('[data-cat]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var btn = document.querySelector('.filter-btn[data-filter="' + a.dataset.cat + '"]');
+      if (btn) btn.click();
     });
   });
 
@@ -84,7 +99,7 @@
           '<input id="f-name" type="text" placeholder="Nombre y apellido" required>' +
           '<label for="f-contact">WhatsApp o email</label>' +
           '<input id="f-contact" type="text" placeholder="Para confirmar tu reserva" required>' +
-          '<div style="margin-top:20px"><button class="btn btn-primary" type="submit" style="width:100%">Reservar mi unidad · ' + p.price + ' €</button></div>' +
+          '<div style="margin-top:20px"><button class="btn btn-primary" type="submit" style="width:100%">Reservar mi unidad · $' + p.price + '</button></div>' +
         '</form>' +
       '</div>';
     modal.classList.add('open');
