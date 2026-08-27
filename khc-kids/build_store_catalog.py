@@ -24,12 +24,15 @@ PINK = HexColor("#E36A98"); BLUE = HexColor("#4E96BF"); GREEN = HexColor("#5C8A3
 INK = HexColor("#5A4852"); SOFT = HexColor("#9A8A92")
 CREAM = HexColor("#FFFBF6"); LINEC = HexColor("#EADFE6"); WHITE = HexColor("#FFFFFF")
 
-def money(x): return f"{x:,.0f} €"
+def money(x): return f"${x:,.0f}"
 
 SEC = [("bebe", "BEBÉS · 0-24 MESES", ORANGE),
        ("nina", "NIÑAS · 1-6 AÑOS", PINK),
        ("nino", "NIÑOS · 1-6 AÑOS", BLUE),
-       ("acc",  "ACCESORIOS · 0-6 AÑOS", GREEN)]
+       ("pueri", "PUERICULTURA & COMIDA", HexColor("#4E96BF")),
+       ("jugu", "JUGUETES · 0-6 AÑOS", GREEN),
+       ("textil", "MANTAS & PAÑALES", HexColor("#8B6BB0")),
+       ("acc",  "ACCESORIOS · 0-6 AÑOS", ORANGE)]
 
 # ---- estilos ----
 ss = getSampleStyleSheet()
